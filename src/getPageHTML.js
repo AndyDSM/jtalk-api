@@ -1,5 +1,5 @@
 
-const rp = require('request-promise');
+const rp = require('request-promise-native');
 const cheerio = require('cheerio');
 
 async function getInitial(text) {

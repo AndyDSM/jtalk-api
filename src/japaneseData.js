@@ -11,6 +11,7 @@ class JMorpheme {
         this.romaji = romaji.trim();
         this.hiragana = cUnit.find('.preference-hiragana').text();
         this.katakana = cUnit.find('.preference-katakana').text();
+        this.type = cUnit.find('.m')[0].attribs['data-pos1']
 
         if (this.romajiInfo !== this.romajiInfo.toLowerCase()) {
             this.romajiInfo = this.romajiInfo.toLowerCase();
